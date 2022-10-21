@@ -12,52 +12,70 @@
 </head>
 
 <body>
-    
+
     <?php include('layout/menu.php') ?>
 
     <!-- Se procede a crear un contenedor donde se tendrá el contenido solicitado -->
-    <div class="container p-4">        
+    <div class="container p-4">
         <div class="card shadow">
             <div class="card-body">
-                <form class="row g-3" method="POST" action="" id="conjuntos">
-                    <div class="mb-3">
-                        <label class="form-label">Escriba Aquí</label>
-                        <textarea name="operacion" class="form-control" id="operacion" rows="5"></textarea>
-                    </div>
-                    <div class="col-12">
-                        <button class="btn btn-primary" type="button" id="enviar">Calcular</button>
-                    </div>
-                </form>
+                <h2 align="justify">El álgebra de conjuntos es el área de la matemática que estudia a los conjuntos como objetos
+                    matemáticos para los que se define un conjunto de operaciones que cumplen determinadas leyes.
+                    Las operaciones del álgebra de conjuntos son: unión, intersección, complemento, diferencia y
+                    diferencia simétrica.</h2>
                 <br>
-                <div id="resultado">
-
+                <div class="card-body text-center">
+                    <div class="row text-center">
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <img src="img/union_de_conjuntos.png" class="img-fluid">
+                                <div class="card-body">
+                                    <a href="<?php echo $SERVERURL ?>operacion_de_conjuntos?union" class="btn btn-primary">Union</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <img src="img/interseccion_de_conjuntos.png" class="img-fluid">
+                                <div class="card-body">
+                                    <a href="<?php echo $SERVERURL ?>operacion_de_conjuntos?interseccion" class="btn btn-primary">Intersección</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <img src="img/diferencia_de_conjuntos.png" class="img-fluid">
+                                <div class="card-body">
+                                    <a href="<?php echo $SERVERURL ?>operacion_de_conjuntos?diferencia" class="btn btn-primary">Diferencia</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <img src="img/union_de_conjuntos.png" class="img-fluid">
+                                <div class="card-body">
+                                    <a href="<?php echo $SERVERURL ?>operacion_de_conjuntos?diferencia_simetrica_de_conjuntos" class="btn btn-primary">Diferencia Simétrica</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <img src="img/complemento_de_conjuntos.png" class="img-fluid">
+                                <div class="card-body">
+                                    <a href="<?php echo $SERVERURL ?>operacion_de_conjuntos?complemento" class="btn btn-primary">Complemento</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <img src="img/conjunto_universal.png" class="img-fluid">
+                                <div class="card-body">
+                                    <a href="<?php echo $SERVERURL ?>operacion_de_conjuntos?universal" class="btn btn-primary">Universal</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <?php
-                    if (isset($_POST['operacion'])) {
-
-                        echo $test, "<br>";                    
-                        echo '    Interseccion con el conjunto A ∩ B  =    ';
-                        $cpp = implode(",", $interseccion1);
-                        echo $cpp;
-                        echo "\n";
-                    }
-                    
-                ?>
-                <br>
-                <?php echo "Conjunto A = { "; print_r($arrayString1); echo " }"; ?>
-                <br>
-                <?php echo "Conjunto B = { "; print_r($arrayString2); echo " }"; ?>
-                <br>
-                <?php echo "Conjunto C = { "; print_r($arrayString3); echo " }"; ?>
-                <br>
-                <?php echo "A ∩ B  = { "; print_r($arrayInterseccion); echo " }"; ?>
-                <br>
-                <?php echo "A - B  = { "; print_r($arrayDiferencia); echo " }"; ?>
-                <br>
-                <?php echo "A ∪ B  = { "; print_r($arrayUnion); echo " }"; ?>
-                <br>
-                <?php echo "A ∆ B  = { "; print_r($arrayDiferenciaSimetrica); echo " }"; ?>
-                <br> 
             </div>
         </div>
     </div>
