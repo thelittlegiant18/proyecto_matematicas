@@ -31,32 +31,45 @@
     <!-- Fin Header -->
 
     <!-- Se procede a crear un contenedor donde se tendrá el contenido solicitado -->
-    <div class="container mt-2">
-        <br>
-        <div class="card shadow">
-            <div class="card-body table-responsive">
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="card">
+                    <div class="card-body">
+                        <header class="single-post-header clearfix">
+                            <h6 class="heading">Calculadora</h6>
+                        </header>
+                        <hr>
+                        <form class="row g-3" method="POST" action="" id="conjuntos">
+                            <input type="hidden" name="operacion" class="form-control" id="operacion"></input>
+                            <div class="mb-3">
+                                <label for="validationDefaultUsername" class="form-label">Conjunto 1</label>
+                                <input type="text" name="conjunto1" class="form-control" id="conjunto1" rows="5"></input>
+                            </div>
+                            <div class="mb-3">
+                                <label for="validationDefaultUsername" class="form-label">Conjunto 2</label>
+                                <input type="text" name="conjunto2" class="form-control" id="conjunto2" rows="5"></input>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary" type="button" id="enviar">Calcular</button>
+                            </div>
+                        </form>
+                        <br>
+                        <div id="resultado">
 
-                <!-- Se procede a crear el formulario para filtrar por medio de la expresión regular con el formato aaaa-mm-dd -->
-                <div class="mb-3">
-                    <label for="validationDefaultUsername" class="form-label">Ejecute aquí</label>
+                        </div>
+                        <?php
+                        if (isset($_POST['operacion'])) {
+
+                            echo $test, "<br>";
+                            echo '    Interseccion con el conjunto A ∩ B  =    ';
+                            $cpp = implode(",", $interseccion1);
+                            echo $cpp;
+                            echo "\n";
+                        }
+                        ?>
+                    </div>
                 </div>
-                <br>
-                <?php echo "A ∪ B  = { "; print_r($arrayUnionTest); echo " }"; ?>
-                <br>
-                <?php echo "Conjunto A = { "; print_r($arrayString1); echo " }"; ?>
-                <br>
-                <?php echo "Conjunto B = { "; print_r($arrayString2); echo " }"; ?>
-                <br>
-                <?php echo "Conjunto C = { "; print_r($arrayString3); echo " }"; ?>
-                <br>
-                <?php echo "A ∩ B  = { "; print_r($arrayInterseccion); echo " }"; ?>
-                <br>
-                <?php echo "A - B  = { "; print_r($arrayDiferencia); echo " }"; ?>
-                <br>
-                <?php echo "A ∪ B  = { "; print_r($arrayUnion); echo " }"; ?>
-                <br>
-                <?php echo "A ∆ B  = { "; print_r($arrayDiferenciaSimetrica); echo " }"; ?>
-                <br>  
             </div>
         </div>
     </div>
@@ -64,6 +77,8 @@
 
     <!-- Se procede a llamar al Scrpt de Bootsrap v5.2 -->
     <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="test.js"></script>
     <!-- Fin Script -->
 </body>
 
