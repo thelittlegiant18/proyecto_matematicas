@@ -53,26 +53,21 @@
                         <hr>
                         <form class="row g-3" method="POST" action="" id="conjuntos">
                             <div class="mb-3">
-                                <textarea name="operacion" class="form-control" id="operacion" rows="5"></textarea>
+                                <label for="validationDefaultUsername" class="form-label">Conjunto 1</label>
+                                <input type="text" name="conjunto1" class="form-control" id="conjunto1" rows="5" required></input>
+                            </div>
+                            <div class="mb-3">
+                                <label for="validationDefaultUsername" class="form-label">Conjunto 2</label>
+                                <input type="text" name="conjunto2" class="form-control" id="conjunto2" rows="5" required></input>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-primary" type="button" id="enviar">Calcular</button>
+                                <button class="btn btn-primary" type="submit" id="enviar">Calcular</button>
                             </div>
                         </form>
                         <br>
                         <div id="resultado">
 
                         </div>
-                        <?php
-                        if (isset($_POST['operacion'])) {
-
-                            echo $test, "<br>";
-                            echo '    Interseccion con el conjunto A ∩ B  =    ';
-                            $cpp = implode(",", $interseccion1);
-                            echo $cpp;
-                            echo "\n";
-                        }
-                        ?>
                     </div>
                 </div>
             </div>
