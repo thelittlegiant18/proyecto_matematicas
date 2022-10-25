@@ -2,6 +2,7 @@ $(document).ready(function () {
     $('#conjuntos').submit(function (e) {
 
         const postData = {
+            operacion: $('#operacion').val(),
             conjunto1: $('#conjunto1').val(),
             conjunto2: $('#conjunto2').val(),
         };

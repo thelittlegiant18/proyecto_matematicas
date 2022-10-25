@@ -52,6 +52,7 @@
                         </header>
                         <hr>
                         <form class="row g-3" method="POST" action="" id="conjuntos">
+                            <input type="hidden" name="operacion" id="operacion" value="<?= $prueba ?>"></input>
                             <div class="mb-3">
                                 <label for="validationDefaultUsername" class="form-label">Conjunto 1</label>
                                 <input type="text" name="conjunto1" class="form-control" id="conjunto1" rows="5" placeholder="Ejemplo: 1,2,3,4" required></input>
