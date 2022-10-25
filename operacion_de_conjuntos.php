@@ -54,11 +54,11 @@
                         <form class="row g-3" method="POST" action="" id="conjuntos">
                             <div class="mb-3">
                                 <label for="validationDefaultUsername" class="form-label">Conjunto 1</label>
-                                <input type="text" name="conjunto1" class="form-control" id="conjunto1" rows="5" required></input>
+                                <input type="text" name="conjunto1" class="form-control" id="conjunto1" rows="5" placeholder="Ejemplo: 1,2,3,4" required></input>
                             </div>
                             <div class="mb-3">
                                 <label for="validationDefaultUsername" class="form-label">Conjunto 2</label>
-                                <input type="text" name="conjunto2" class="form-control" id="conjunto2" rows="5" required></input>
+                                <input type="text" name="conjunto2" class="form-control" id="conjunto2" rows="5" placeholder="Ejemplo: 1,2,3,4" required></input>
                             </div>
                             <div class="col-12">
                                 <button class="btn btn-primary" type="submit" id="enviar">Calcular</button>
