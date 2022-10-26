@@ -62,7 +62,7 @@ if (isset($_POST['conjunto1']) && isset($_POST['conjunto2'])) {
             $array2 = explode(",", $formateoConjunto2);
 
             $diferencia = array_diff($array1, $array2);
-            $arrayDiferencia = implode(', ', $diferencia);
+            $diferencia2 = array_diff($array2, $array1);
 
             echo "Conjunto 1 = {", $formateoConjunto1, "}";
             echo "<br>";
@@ -71,6 +71,10 @@ if (isset($_POST['conjunto1']) && isset($_POST['conjunto2'])) {
             echo "<b>Conjunto 1 \ Conjunto 2 = </b>";
             $arrayDiferencia = implode(', ', $diferencia);
             echo "<b>{", $arrayDiferencia, "}</b>";
+            echo "<br>";
+            echo "<b>Conjunto 2 \ Conjunto 1 = </b>";
+            $arrayDiferencia2 = implode(', ', $diferencia2);
+            echo "<b>{", $arrayDiferencia2, "}</b>";
 
             break;
 
@@ -89,7 +93,6 @@ if (isset($_POST['conjunto1']) && isset($_POST['conjunto2'])) {
             $diferencia2 = array_diff($array2, $array1);
 
             $diferenciaSimetrica = array_unique(array_merge($diferencia, $diferencia2));
-            $arrayDiferenciaSimetrica = implode(', ', $diferenciaSimetrica);
 
             echo "Conjunto 1 = {", $formateoConjunto1, "}";
             echo "<br>";
