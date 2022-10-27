@@ -6,7 +6,7 @@ $diferencia_simetrica = "0";
 $complemento = "0";
 if (isset($_GET["union"])) {
     $union = $_GET["union"];
-    $imagen = "union_de_conjuntos.png";
+    $imagen = "union_de_conjuntos.svg";
     $titulo = 'Unión de Conjuntos';
     $parrafo = 'Dado dos (2) conjuntos M y N, se define la unión entre estos dos conjuntos como el conjunto formado por los elementos
                 que pertenecen al conjunto M o pertenecen al conjunto N, simbolicamente se define:
@@ -20,7 +20,7 @@ if (isset($_GET["union"])) {
     //print_r("Se está recibiendo la operación unión");
 } elseif (isset($_GET["interseccion"])) {
     $interseccion = $_GET["interseccion"];
-    $imagen = "interseccion_de_conjuntos.png";
+    $imagen = "interseccion_de_conjuntos.svg";
     $titulo = 'Intersección de Conjuntos';
     $parrafo = 'Dado dos conjuntos M y N, se define la intersección del conjunto M con el conjunto N, al conjunto formado por los elementos
                 que pertenecen al conjunto M y al conjunto N a la vez.
@@ -35,7 +35,7 @@ if (isset($_GET["union"])) {
     //print_r("Se está recibiendo la operación Intersección");
 } elseif (isset($_GET["diferencia"])) {
     $diferencia = $_GET["diferencia"];
-    $imagen = "diferencia_de_conjuntos.png";
+    $imagen = "diferencia_de_conjuntos.svg";
     $titulo = 'Diferencia entre Conjuntos';
     $parrafo = 'Dado dos conjuntos M y N, se define la diferencia entre el conjunto M y el conjunto N, al conjunto formado por los elementos
                 que pertenecen al conjunto M y NO al conjunto N.
@@ -45,7 +45,7 @@ if (isset($_GET["union"])) {
     //print_r("Se está recibiendo la operación diferencia");
 } elseif (isset($_GET["diferencia_simetrica"])) {
     $diferencia_simetrica = $_GET["diferencia_simetrica"];
-    $imagen = "diferencia_simetrica_de_conjuntos.png";
+    $imagen = "diferencia_simetrica_de_conjuntos.svg";
     $titulo = 'Diferencia Simétrica entre Conjuntos';
     $parrafo = 'Dado dos conjuntos M y N, se define la diferencia simétrica entre el conjunto M y el conjunto N, al conjunto formado por los elementos
                 que pertenecen al unión de los dos conjuntos y no pertenecen a la intersección de los dos conjuntos.
@@ -54,7 +54,7 @@ if (isset($_GET["union"])) {
     //print_r("Se está recibiendo la operación Diferencia Simétrica");
 } elseif (isset($_GET["complemento"])) {
     $complemento = $_GET["complemento"];
-    $imagen = "complemento_de_conjuntos.png";
+    $imagen = "complemento_de_conjuntos.svg";
     $titulo = 'Complemento de un Conjunto';
     $parrafo = 'Dado el conjunto M referido a un conjunto universal <b>U</b>, el complemento del conjunto M es el conjunto formado
                 por los elementos del conjunto universal que no estan en el conjunto M.
@@ -64,7 +64,7 @@ if (isset($_GET["union"])) {
     //print_r("Se está recibiendo la operación Complemento");
 } elseif (isset($_GET["universal"])) {
     $complemento = $_GET["universal"];
-    $imagen = "conjunto_universal.png";
+    $imagen = "conjunto_universal.svg";
     $titulo = 'Conjunto Universal';
     $parrafo = 'El conjunto universal es el conjunto formado por todos los elementos del tema de referencia.
                 <br>Se representa con la letra U y graficamente se representa con un rectangulo.';
