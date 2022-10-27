@@ -28,7 +28,7 @@
                     <div class="row text-center">
                         <div class="col-sm-3">
                             <div class="card">
-                                <img src="img/union_de_conjuntos.png" class="img-fluid">
+                                <img src="img/union_de_conjuntos.svg" class="img-fluid">
                                 <div class="card-body">
                                     <a href="<?php echo $SERVERURL ?>operacion_de_conjuntos?union" class="btn btn-primary">Union</a>
                                 </div>
@@ -36,7 +36,7 @@
                         </div>
                         <div class="col-sm-3">
                             <div class="card">
-                                <img src="img/interseccion_de_conjuntos.png" class="img-fluid">
+                                <img src="img/interseccion_de_conjuntos.svg" class="img-fluid">
                                 <div class="card-body">
                                     <a href="<?php echo $SERVERURL ?>operacion_de_conjuntos?interseccion" class="btn btn-primary">Intersección</a>
                                 </div>
@@ -44,7 +44,7 @@
                         </div>
                         <div class="col-sm-3">
                             <div class="card">
-                                <img src="img/diferencia_de_conjuntos.png" class="img-fluid">
+                                <img src="img/diferencia_de_conjuntos.svg" class="img-fluid">
                                 <div class="card-body">
                                     <a href="<?php echo $SERVERURL ?>operacion_de_conjuntos?diferencia" class="btn btn-primary">Diferencia</a>
                                 </div>
@@ -52,7 +52,7 @@
                         </div>
                         <div class="col-sm-3">
                             <div class="card">
-                                <img src="img/union_de_conjuntos.png" class="img-fluid">
+                                <img src="img/union_de_conjuntos.svg" class="img-fluid">
                                 <div class="card-body">
                                     <a href="<?php echo $SERVERURL ?>operacion_de_conjuntos?diferencia_simetrica_de_conjuntos" class="btn btn-primary">Diferencia Simétrica</a>
                                 </div>
@@ -60,7 +60,7 @@
                         </div>
                         <div class="col-sm-3">
                             <div class="card">
-                                <img src="img/complemento_de_conjuntos.png" class="img-fluid">
+                                <img src="img/complemento_de_conjuntos.svg" class="img-fluid">
                                 <div class="card-body">
                                     <a href="<?php echo $SERVERURL ?>operacion_de_conjuntos?complemento" class="btn btn-primary">Complemento</a>
                                 </div>
@@ -68,7 +68,7 @@
                         </div>
                         <div class="col-sm-3">
                             <div class="card">
-                                <img src="img/conjunto_universal.png" class="img-fluid">
+                                <img src="img/conjunto_universal.svg" class="img-fluid">
                                 <div class="card-body">
                                     <a href="<?php echo $SERVERURL ?>operacion_de_conjuntos?universal" class="btn btn-primary">Universal</a>
                                 </div>
