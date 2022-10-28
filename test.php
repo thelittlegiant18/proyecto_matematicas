@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- Se procede a importar el backend -->
-<?php include('backend.php') ?>
+<?php include('backend_test.php') ?>
 <html>
 
 <head lang="es">
@@ -78,8 +78,11 @@
     <!-- Se procede a llamar al Scrpt de Bootsrap v5.2 -->
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/jquery-3.6.0.js"></script>
-    <script src="test.js"></script>
+    <!-- <script src="test.js"></script> -->
+    <script src="notas_Musicales/Melodia.js"></script>
+    <script src="notas_Musicales/Nota.js"></script>
     <!-- Fin Script -->
 </body>
+
 
 </html>

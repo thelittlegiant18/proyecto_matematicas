@@ -51,7 +51,7 @@
                             <h6 class="heading">Calculadora de <?= $titulo ?></h6>
                         </header>
                         <hr>
-                        <?php $expresion =  "[^\.&×∞'‘`´„|¦│\/¨∙.…:·@•°¬¯—-≈=_-]+\b" ?>
+                        <?php $expresion =  "[^\.;&×∞'‘`´„|¦│\/¨∙.…:·@•°¬¯—-≈=_-]+\b" ?>
                         <form class="row g-3" method="POST" action="" id="conjuntos">
                             <input type="hidden" name="operacion" id="operacion" value="<?= $prueba ?>"></input>
                             <div class="mb-3">
@@ -83,5 +83,5 @@
     <script src="test.js"></script>
     <!-- Fin Script -->
 </body>
-
+<?php include('layout/footer.php') ?>
 </html>

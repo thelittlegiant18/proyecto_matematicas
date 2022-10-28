@@ -6,6 +6,7 @@ function jsNota(frecuencia){
   o.type="sawtooth";
   o.frequency.value=frecuencia;
   g.connect(context.destination);
+  g.gain.value = 0.025;
   o.start(0);
   g.gain.exponentialRampToValueAtTime(0.00001,context.currentTime +1.5);
 }

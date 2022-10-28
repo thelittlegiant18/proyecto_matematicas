@@ -87,5 +87,5 @@
     <script src="test.js"></script>
     <!-- Fin Script -->
 </body>
-
+<?php include('layout/footer.php') ?>
 </html>

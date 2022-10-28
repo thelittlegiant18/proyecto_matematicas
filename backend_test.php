@@ -50,8 +50,6 @@ if (isset($_POST['operacion'])) {
     $interseccion = array_intersect($test, $test2);
     //$arreglo = array_chunk(explode(' ', $contenidoFiltrado), 1);
 
-    //print_r($contenidoFiltrado);
-
     //$keys = array_keys($resultado2);
 
     // $new_array = [];
@@ -60,19 +58,19 @@ if (isset($_POST['operacion'])) {
     //     array_push($new_array, $caso);
     // }
 
-    // foreach ($arreglo as $values) {
-    //         echo $values . " ";
-    // }
+    foreach ($interseccion as $values) {
+            echo $values . " ";
+    }
 
     //$result = call_user_func_array('array_intersect', $new_array);
     //$result = array_intersect(...$new_array);    
-    print_r($test);
-    echo "<br>";
-    print_r($test2);
-    echo "<br>";
-    print_r($interseccion);
+    // print_r($test);
+    // echo "<br>";
+    // print_r($test2);
+    // echo "<br>";
+    // print_r($interseccion);
 
-    $interseccion1 = array();
+    // $interseccion1 = array();
 
     // for ($i = 0; $i < count($new_array[0]); $i++) {
     //     for ($j = 0; $j < count($new_array[1]); $j++) {
