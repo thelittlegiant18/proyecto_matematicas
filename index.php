@@ -52,7 +52,7 @@
                         </div>
                         <div class="col-sm-3">
                             <div class="card">
-                                <img src="img/union_de_conjuntos.svg" class="img-fluid">
+                                <img src="img/diferencia_simetrica_de_conjuntos.svg" class="img-fluid">
                                 <div class="card-body">
                                     <a href="<?php echo $SERVERURL ?>operacion_de_conjuntos?diferencia_simetrica" class="btn btn-primary">Diferencia Simétrica</a>
                                 </div>

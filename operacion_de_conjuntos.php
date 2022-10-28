@@ -51,15 +51,16 @@
                             <h6 class="heading">Calculadora de <?= $titulo ?></h6>
                         </header>
                         <hr>
+                        <?php $expresion =  "[^\.&×∞'‘`´„|¦│\/¨∙.…:·@•°¬¯—-≈=_-]+\b" ?>
                         <form class="row g-3" method="POST" action="" id="conjuntos">
                             <input type="hidden" name="operacion" id="operacion" value="<?= $prueba ?>"></input>
                             <div class="mb-3">
                                 <label for="validationDefaultUsername" class="form-label">Conjunto 1</label>
-                                <input type="text" name="conjunto1" class="form-control" id="conjunto1" rows="5" placeholder="Ejemplo: 1,2,3,4" required></input>
+                                <input type="text" pattern="<?= $expresion ?>" name="conjunto1" class="form-control" id="conjunto1" rows="5" placeholder="Ejemplo: 1,2,3,4"></input>
                             </div>
                             <div class="mb-3">
                                 <label for="validationDefaultUsername" class="form-label">Conjunto 2</label>
-                                <input type="text" name="conjunto2" class="form-control" id="conjunto2" rows="5" placeholder="Ejemplo: 1,2,3,4" required></input>
+                                <input type="text" pattern="<?= $expresion ?>" name="conjunto2" class="form-control" id="conjunto2" rows="5" placeholder="Ejemplo: 1,2,3,4"></input>
                             </div>
                             <div class="col-12">
                                 <button class="btn btn-primary" type="submit" id="enviar">Calcular</button>

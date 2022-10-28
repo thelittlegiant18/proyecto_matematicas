@@ -8,16 +8,17 @@ if (isset($_POST['conjunto1']) && isset($_POST['conjunto2'])) {
 
     $operacion = $_POST['operacion'];
 
+    $conjunto1 = $_POST['conjunto1'];
+    $conjunto2 = $_POST['conjunto2'];
+    $formateoConjunto1 = str_replace([' ', '{', '}'], "", $conjunto1);
+    $formateoConjunto2 = str_replace([' ', '{', '}'], "", $conjunto2);
+    $array1 = explode(",", $formateoConjunto1);
+    $array2 = explode(",", $formateoConjunto2);
+
     switch ($operacion) {
 
-        case 'union':
 
-            $conjunto1 = $_POST['conjunto1'];
-            $conjunto2 = $_POST['conjunto2'];
-            $formateoConjunto1 = str_replace([' ', '{', '}'], "", $conjunto1);
-            $array1 = explode(",", $formateoConjunto1);
-            $formateoConjunto2 = str_replace([' ', '{', '}'], "", $conjunto2);
-            $array2 = explode(",", $formateoConjunto2);
+        case 'union':
 
             $union = array_unique(array_merge($array1, $array2));
 
@@ -33,13 +34,6 @@ if (isset($_POST['conjunto1']) && isset($_POST['conjunto2'])) {
 
         case 'interseccion':
 
-            $conjunto1 = $_POST['conjunto1'];
-            $conjunto2 = $_POST['conjunto2'];
-            $formateoConjunto1 = str_replace([' ', '{', '}'], "", $conjunto1);
-            $array1 = explode(",", $formateoConjunto1);
-            $formateoConjunto2 = str_replace([' ', '{', '}'], "", $conjunto2);
-            $array2 = explode(",", $formateoConjunto2);
-
             $interseccion = array_intersect($array1, $array2);
 
             echo "Conjunto 1 = {", $formateoConjunto1, "}";
@@ -53,13 +47,6 @@ if (isset($_POST['conjunto1']) && isset($_POST['conjunto2'])) {
             break;
 
         case 'diferencia':
-
-            $conjunto1 = $_POST['conjunto1'];
-            $conjunto2 = $_POST['conjunto2'];
-            $formateoConjunto1 = str_replace([' ', '{', '}'], "", $conjunto1);
-            $array1 = explode(",", $formateoConjunto1);
-            $formateoConjunto2 = str_replace([' ', '{', '}'], "", $conjunto2);
-            $array2 = explode(",", $formateoConjunto2);
 
             $diferencia = array_diff($array1, $array2);
             $diferencia2 = array_diff($array2, $array1);
@@ -80,13 +67,6 @@ if (isset($_POST['conjunto1']) && isset($_POST['conjunto2'])) {
 
         case 'diferencia_simetrica':
 
-            $conjunto1 = $_POST['conjunto1'];
-            $conjunto2 = $_POST['conjunto2'];
-            $formateoConjunto1 = str_replace([' ', '{', '}'], "", $conjunto1);
-            $array1 = explode(",", $formateoConjunto1);
-            $formateoConjunto2 = str_replace([' ', '{', '}'], "", $conjunto2);
-            $array2 = explode(",", $formateoConjunto2);
-
             $diferencia = array_diff($array1, $array2);
             $arrayDiferencia = implode(', ', $diferencia);
 
@@ -106,13 +86,6 @@ if (isset($_POST['conjunto1']) && isset($_POST['conjunto2'])) {
 
         case 'complemento':
 
-            $conjunto1 = $_POST['conjunto1'];
-            $conjunto2 = $_POST['conjunto2'];
-            $formateoConjunto1 = str_replace([' ', '{', '}'], "", $conjunto1);
-            $array1 = explode(",", $formateoConjunto1);
-            $formateoConjunto2 = str_replace([' ', '{', '}'], "", $conjunto2);
-            $array2 = explode(",", $formateoConjunto2);
-
             $diferencia = array_diff($array1, $array2);
             $arrayDiferencia = implode(', ', $diferencia);
 
@@ -131,13 +104,6 @@ if (isset($_POST['conjunto1']) && isset($_POST['conjunto2'])) {
             break;
 
         case 'universal':
-
-            $conjunto1 = $_POST['conjunto1'];
-            $conjunto2 = $_POST['conjunto2'];
-            $formateoConjunto1 = str_replace([' ', '{', '}'], "", $conjunto1);
-            $array1 = explode(",", $formateoConjunto1);
-            $formateoConjunto2 = str_replace([' ', '{', '}'], "", $conjunto2);
-            $array2 = explode(",", $formateoConjunto2);
 
             $union = array_unique(array_merge($array1, $array2));
 
