@@ -19,10 +19,10 @@
     <div class="container p-4">
         <div class="card shadow">
             <div class="card-body">
-                <h2 align="justify">El álgebra de conjuntos es el área de la matemática que estudia a los conjuntos como objetos
+                <h5 align="justify">El álgebra de conjuntos es el área de la matemática que estudia a los conjuntos como objetos
                     matemáticos para los que se define un conjunto de operaciones que cumplen determinadas leyes.
                     Las operaciones del álgebra de conjuntos son: unión, intersección, complemento, diferencia y
-                    diferencia simétrica.</h2>
+                    diferencia simétrica.</h5>
                 <br>
                 <div class="card-body text-center">
                     <div class="row text-center">
@@ -54,7 +54,7 @@
                             <div class="card">
                                 <img src="img/union_de_conjuntos.svg" class="img-fluid">
                                 <div class="card-body">
-                                    <a href="<?php echo $SERVERURL ?>operacion_de_conjuntos?diferencia_simetrica_de_conjuntos" class="btn btn-primary">Diferencia Simétrica</a>
+                                    <a href="<?php echo $SERVERURL ?>operacion_de_conjuntos?diferencia_simetrica" class="btn btn-primary">Diferencia Simétrica</a>
                                 </div>
                             </div>
                         </div>

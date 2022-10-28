@@ -26,15 +26,12 @@
                 <li class="nav-item">
                     <a class="nav-link" href="<?php echo $SERVERURL ?>operacion_de_conjuntos?diferencia_simetrica">Diferencia Simétrica</a>
                 </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="<?php //echo $SERVERURL ?>operacion_de_conjuntos?complemento">Complemento</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo $SERVERURL ?>operacion_de_conjuntos?complemento">Complemento</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php //echo $SERVERURL ?>operacion_de_conjuntos?universal">Universal</a>
+                    <a class="nav-link" href="<?php echo $SERVERURL ?>operacion_de_conjuntos?universal">Universal</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="<?php //echo $SERVERURL ?>">A ganar así sea con un 3</a>
-                </li> -->
             </ul>
         </div>
     </div>

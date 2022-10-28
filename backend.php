@@ -104,6 +104,53 @@ if (isset($_POST['conjunto1']) && isset($_POST['conjunto2'])) {
 
             break;
 
+        case 'complemento':
+
+            $conjunto1 = $_POST['conjunto1'];
+            $conjunto2 = $_POST['conjunto2'];
+            $formateoConjunto1 = str_replace([' ', '{', '}'], "", $conjunto1);
+            $array1 = explode(",", $formateoConjunto1);
+            $formateoConjunto2 = str_replace([' ', '{', '}'], "", $conjunto2);
+            $array2 = explode(",", $formateoConjunto2);
+
+            $diferencia = array_diff($array1, $array2);
+            $arrayDiferencia = implode(', ', $diferencia);
+
+            $diferencia2 = array_diff($array2, $array1);
+
+            $diferenciaSimetrica = array_unique(array_merge($diferencia, $diferencia2));
+
+            echo "Conjunto U = {", $formateoConjunto1, "}";
+            echo "<br>";
+            echo "Conjunto 2 = {", $formateoConjunto2, "}";
+            echo "<br>";
+            echo "<b>Conjunto 2' = </b>";
+            $arrayDiferenciaSimetrica = implode(', ', $diferenciaSimetrica);
+            echo "<b>{", $arrayDiferenciaSimetrica, "}</b>";
+
+            break;
+
+        case 'universal':
+
+            $conjunto1 = $_POST['conjunto1'];
+            $conjunto2 = $_POST['conjunto2'];
+            $formateoConjunto1 = str_replace([' ', '{', '}'], "", $conjunto1);
+            $array1 = explode(",", $formateoConjunto1);
+            $formateoConjunto2 = str_replace([' ', '{', '}'], "", $conjunto2);
+            $array2 = explode(",", $formateoConjunto2);
+
+            $union = array_unique(array_merge($array1, $array2));
+
+            echo "Conjunto U = {", $formateoConjunto1, "}";
+            echo "<br>";
+            echo "Conjunto 2 = {", $formateoConjunto2, "}";
+            echo "<br>";
+            echo "<b>Conjunto U = </b>";
+            $arrayUnion = implode(', ', $union);
+            echo "<b>{", $arrayUnion, "}</b>";
+
+            break;
+
         default:
 
             echo "<div class='alert alert-warning' role='alert'>
